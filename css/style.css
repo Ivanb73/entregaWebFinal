@@ -1,0 +1,358 @@
+.textSlide {
+  display: flex;
+  align-items: center;
+  font-family: 'Staatliches', cursive;
+  flex-direction: column;
+  height: 29rem;
+  font-size: 6rem;
+  -webkit-text-fill-color:#fe2dc5 ;
+  background: #FCE14B;
+  width: 100vw;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.right {
+  width: fit-content;
+  white-space: nowrap;
+  animation: example 12s linear 1s infinite;
+}
+
+.left {
+  width: fit-content;
+  white-space: nowrap;
+  animation: example2 15s linear 1s infinite;
+}
+
+@keyframes example2 {
+  0% {
+    margin-right: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-right: -100%;
+    opacity: 0%;
+  }
+}
+
+@keyframes example {
+  0% {
+    margin-left: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-left: -100%;
+    opacity: 0%;
+  }
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #FCE14B;
+
+}
+
+::-webkit-scrollbar-track{
+  width: 5x;
+
+}
+
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background-color: #fe2dc5;
+  border-radius: 20px;
+}
+
+
+/* table */
+
+.content-103{
+background: #fe2dc5;
+padding-bottom:20px;
+}
+
+.sercies-title{
+text-align:center;
+padding: 50px 0;
+font-size: 3rem;
+}
+
+.service-post {
+  background: #fce14b;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  z-index: 12;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  -moz-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.08);
+}
+.service-content {
+  position: relative;
+  z-index: 13;
+}
+.service-icon {
+  margin: 10px 0 20px 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 50px;
+  -moz-transition: color, 250ms;
+  -o-transition: color, 250ms;
+  -webkit-transition: color, 250ms;
+  transition: color, 250ms;
+}
+.service-icon {
+  border-color: #000;
+}
+.content-103 .service-icon i {
+  font-size: 18px;
+  color: #000;
+}
+.content-103 .service-post:hover .service-icon i {
+  color: #000;
+}
+.content-103 .service-title {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  -moz-transition: color, 250ms;
+  -o-transition: color, 250ms;
+  -webkit-transition: color, 250ms;
+  transition: color, 250ms;
+}
+.content-103 .service-post:hover .service-title {
+  color: #fff;
+}
+.content-103 .service-description {
+  -moz-transition: color, 250ms;
+  -o-transition: color, 250ms;
+  -webkit-transition: color, 250ms;
+  transition: color, 250ms;
+}
+.content-103 .service-post:hover .service-description {
+  color: #fff;
+}
+
+.content-103 .service-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 0px;
+  background: #000;
+  -moz-transition: width, 250ms;
+  -o-transition: width, 250ms;
+  -webkit-transition: width, 250ms;
+  transition: width, 250ms;
+}
+
+.content-103 .service-post:hover .service-hover {
+  height: 100%;
+}
+
+.about{
+  margin-top:50px
+}
+
+
+/* quote */
+
+blockquote {
+  position: relative;
+  margin: 80px auto;
+  width: 600px;
+  font-size: 48px;
+  line-height: 56px;
+  padding-left: 40px;
+  border-left: 2px solid #000;
+}
+
+blockquote span {
+  display: block;
+  text-align: right;
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+blockquote.tweet-this:hover p {
+	opacity: 0.5;
+	transition: opacity 0.2s ease;
+}
+
+blockquote.tweet-this .tweet-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 74px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -36px;
+  transition: all 0.2s ease;
+}
+
+/* contac-us */
+
+.contact{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+/* follow-us */
+
+.contenedor-redes-sociales {
+  margin: 20px 0 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor-redes-sociales a {
+  position: relative;
+  display: inline-block;
+  height: 36px;
+  width: 160px;
+  line-height: 35px;
+  padding: 0;
+  color: #fff;
+  border-radius: 50px;
+  background: #fff;
+  margin: 5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.contenedor-redes-sociales a:hover span.circulo {
+  left: 100%;
+  margin-left: -35px;
+  background: #fff;
+}
+
+.contenedor-redes-sociales a:hover span.titulo {
+  opacity: 0;
+}
+
+.contenedor-redes-sociales a:hover span.titulo-hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+  opacity: 0;
+}
+
+.contenedor-redes-sociales a span.circulo {
+  display: block;
+  color: #fff;
+  position: absolute;
+  float: left;
+  margin: 3px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+
+.contenedor-redes-sociales a span.circulo i {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.contenedor-redes-sociales a span.titulo, .contenedor-redes-sociales a span.titulo-hover {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .5s;
+}
+
+.contenedor-redes-sociales a span.titulo {
+  right: 15px
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+  left: 15px
+}
+
+
+/*colorsRedes*/
+
+.contenedor-redes-sociales .facebook {
+  border: 2px solid #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover, .contenedor-redes-sociales .facebook span.circulo {
+  background: #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover span.circulo, .contenedor-redes-sociales .facebook span.titulo {
+  color: #3b5998;
+}
+
+.contenedor-redes-sociales .instagram {
+  border: 2px solid #fe2dc5;
+}
+
+.contenedor-redes-sociales .instagram:hover, .contenedor-redes-sociales .instagram span.circulo {
+  background: #fe2dc5;
+}
+
+.contenedor-redes-sociales .instagram:hover span.circulo, .contenedor-redes-sociales .instagram span.titulo {
+  color: #fe2dc5;
+}
+
+
+@media screen and (max-width: 480px) {
+  .contenedor-redes-sociales a {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+  }
+}
+
+/* product */
+
+.portfolio{
+  margin-top: 50px;
+}
+
+/* blog */
+.blog{
+  margin-top: 50px;
+  margin-bottom: 170px;
+  
+}

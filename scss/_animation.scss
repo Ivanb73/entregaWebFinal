@@ -1,0 +1,135 @@
+.text {
+    display: flex;
+    width: 285px;
+    text-align: left;
+    height: 62px;
+    vertical-align: -2px;
+  
+    > div {
+      font-size: 0px;
+      opacity: 0;
+      margin-top: -30px;
+      position: absolute;
+  
+      &:nth-child(1) {
+        animation: roll 5s linear infinite 0s;
+      }
+  
+      &:nth-child(2) {
+        animation: roll 5s linear infinite 1s;
+      }
+  
+      &:nth-child(3) {
+        animation: roll 5s linear infinite 2s;
+      }
+  
+      &:nth-child(4) {
+        animation: roll 5s linear infinite 3s;
+      }
+    }
+  }
+  
+  @keyframes roll {
+    0% {
+      font-size: 0px;
+      opacity: 0;
+      margin-top: -30px;
+    }
+  
+    3% {
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+  
+    5% {
+      font-size: inherit;
+      opacity: 1;
+      margin-top: 0px;
+    }
+  
+    20% {
+      font-size: inherit;
+      opacity: 1;
+      margin-top: 0px;
+    }
+  
+    27% {
+      font-size: 0px;
+      opacity: 0.5;
+      margin-top: 100px;
+    }
+  
+    100% {
+      font-size: 0px;
+      opacity: 0;
+      margin-top: -30px;
+    }
+  }
+  
+// animation two
+.textSlide {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 6rem;
+  -webkit-text-fill-color: white;
+  -webkit-animation: fill 0.1s infinite alternate;
+  background: black;
+  width: 100vw;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.right {
+  width: fit-content;
+  white-space: nowrap;
+  animation: example 12s linear 1s infinite;
+}
+
+.left {
+  width: fit-content;
+  white-space: nowrap;
+  animation: example2 15s linear 1s infinite;
+}
+
+@keyframes example2 {
+  0% {
+    margin-right: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-right: -100%;
+    opacity: 0%;
+  }
+}
+
+@keyframes example {
+  0% {
+    margin-left: 0%;
+    opacity: 0%;
+  }
+
+  10% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    margin-left: -100%;
+    opacity: 0%;
+  }
+}
